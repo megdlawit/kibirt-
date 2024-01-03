@@ -166,3 +166,58 @@ body {
 
     }
 }
+
+/* ************************************ grid************ */
+.grid-container{
+    margin-top: 3rem;
+}
+.img-shoe{
+    position: relative;
+}
+
+.img-shoe-text{
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: left;
+      margin-top: 8rem;
+      margin-left: 2rem;
+      color: white;
+      font-size: 50px;
+      font-weight: 300; 
+}
+
+.img-bag{
+    position: relative;
+}
+
+.img-bag-text{
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: left;
+      margin-top: 8rem;
+      margin-left: 2rem;
+      color: white;
+      font-size: 50px;
+      font-weight: 300; 
+}
+
+.img-cloth{
+    position: relative;
+}
+
+.img-cloth-text{
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: left;
+      margin-top: 18rem;
+      margin-left: 2rem;
+      color: white;
+      font-size: 50px;
+      font-weight: 300; 
+}

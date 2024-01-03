@@ -27,9 +27,11 @@ const Hero = () => {
             className="secound-bag"
             alt="Leather Bag"
           />
-          <p className="text-a" >“አንቺ ዉድ ነሽ፤ አንቺ ጠንካራ ነሽ፤ አንቺ የከበርሽ ነሽ…….”</p>
+          
         </div>
+
       </div>
+      <p className="text-a" >“አንቺ ዉድ ነሽ፤ አንቺ ጠንካራ ነሽ፤ አንቺ የከበርሽ ነሽ…….”</p>
     </div>
     </div>
   );

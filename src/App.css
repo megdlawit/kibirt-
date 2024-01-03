@@ -59,10 +59,13 @@ body {
 
 .text-a{
   align-items: center;
+  margin-left: 15rem;
   font-weight: 300;
   color:white;
-  margin-top: 200px;
-  font-size: larger;
+  margin-top: 15px;
+  /* margin-bottom: 20rem; */
+  font-size: 40px;
+  
   
 
 }

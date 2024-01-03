@@ -67,41 +67,6 @@ body {
 
 }
 
-
-
-
-
-
-.Subscription {
-    color: gray;
-}
-
-.last-img {
- width: 100%;
-}
-.logofooter{
-    font-weight: 600;
-    color: #000;
-}
-.listmenu{
-    list-style: none;
-}
-.listmenu a{
-    text-decoration: none;
-    color: #000;
-} 
-.listmenu li a:hover{
-    color: blue;
-    transition: all .42s ease;
-}
-.menuhead{
-    margin-left: 30px;
-}
-.lastemail{
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-}
 /* =============responsive=phone========== */
 @media screen and (max-width:767px) {
 

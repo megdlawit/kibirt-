@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+:root {
+    --bs-orange: #f2ac36;
+    --bs-light: #fffbf5;
+}
+
+.hero{
+  background-color: #1A2E3A;
+  margin-top: 0%;
+}
+
+
+
+.shop-Text {
+    font-weight: 700;
+    color: var(--bs-light);
+    text-transform: uppercase;
+    color: white;
+}
+
+.stylish-text {
+    color: var(--bs-orange);
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    border: 6px solid var(--bs-light);
+    border-radius: 10px;
+}
+
+.secound-bag {
+    height: 200px;
+    width: 250px;
+    border: 6px solid var(--bs-light);
+    border-radius: 10px;
+    position: absolute;
+    left: 48%;
+    top: 45%;
+    background: #000;
+}
+
+
+.shop-Text1 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph-text {
+    color: gray;
+
+}
+
+.text-a{
+  align-items: center;
+  font-weight: 300;
+  color:white;
+  margin-top: 200px;
+  font-size: larger;
+  
+
+}
+
+
+
+
+
+
+.Subscription {
+    color: gray;
+}
+
+.last-img {
+ width: 100%;
+}
+.logofooter{
+    font-weight: 600;
+    color: #000;
+}
+.listmenu{
+    list-style: none;
+}
+.listmenu a{
+    text-decoration: none;
+    color: #000;
+} 
+.listmenu li a:hover{
+    color: blue;
+    transition: all .42s ease;
+}
+.menuhead{
+    margin-left: 30px;
+}
+.lastemail{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+/* =============responsive=phone========== */
+@media screen and (max-width:767px) {
+
+    /* header-section-css */
+    .secound-bag {
+        display: none;
+    }
+
+    .icon-menu1 {
+        display: none;
+    }
+
+    .btn2 {
+        width: 34%;
+    }
+
+    .btn3 {
+        left: 245px;
+        width: 28%;
+    }
+
+    .input {
+        padding-right: 140px;
+    }
+}
+
+/* ================Responsive mini=ipad====================== */
+@media screen and (max-width:768px) {
+
+    /* header-section-css */
+    .btn2 {
+        width: 40%;
+    }
+
+    .secound-bag {
+        left: 49%;
+        top: 28%;
+
+    }
+}
+
+@media screen and (max-width:820px) {
+    .btn2 {
+        width: 40%;
+    }
+
+    .secound-bag {
+        left: 49%;
+        top: 28%;
+
+    }
+}
+
+@media screen and (max-width:912px) {
+    .btn2 {
+        width: 40%;
+    }
+
+    .secound-bag {
+        left: 49%;
+        top: 28%;
+
+    }
+}

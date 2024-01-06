@@ -16,6 +16,7 @@ function App() {
       <Grid/>
       <About/>
       <Card/>
+      <Contact/>
       
     </div>
   );

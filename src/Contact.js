@@ -12,7 +12,7 @@ const Contact = () => {
           <div className="bg-white p-4 text-center" style={{ border: '2px solid #C0A142' }}>
             <FaThumbsUp className="icons" />
             <h3>100% Satisfaction Guaranteed</h3>
-            <p>Lorem ipsum dolor sit amet consectetur. Suspendisse laoreet scelerisque morbi vulputate. Quisque bibendum eget id diam elementum fringilla duis.</p>
+            <p>High quality, Accessibility, Africanism, Convenience and Consistency </p>
           </div>
         </Col>
         <Col md={3}>
@@ -21,14 +21,14 @@ const Contact = () => {
               <div className="bg-white p-4 text-center" style={{ border: '2px solid #C0A142' }}>
                 <FaPhoneSquareAlt className="icons" />
                 <h3>Contact Us</h3>
-                <p>Lorem ipsum dolor sit amet consectetur. Suspendisse laore</p>
+                <p>+2519087654/+2519876543</p>
               </div>
             </Col>
             <Col md={12} className="d-flex align-items-center justify-content-center">
               <div className="bg-white p-4 text-center" style={{ border: '2px solid  #C0A142' }}>
                 <IoIosRocket className="icons" />
-                <h3>Fast Delivery</h3>
-                <p>Lorem ipsum dolor sit amet consectetur. Suspendisse laore</p>
+                <h3> Delivery</h3>
+                <h6>free delivery sgsegedthxfgt t</h6>
               </div>
             </Col>
           </Row>
@@ -37,9 +37,12 @@ const Contact = () => {
           <div className="bg-white p-4 text-center" style={{ border: '2px solid #C0A142' }}>
             <MdOutlineSocialDistance className="icons" />
             <h3>Social media</h3>
-            <p>Lorem ipsum dolor sit amet consectetur. Suspendisse laore Lorem ipsum dolor sit amet consectetur. Suspendisse laore
-            Lorem ipsum dolor sit amet consectetur. Suspendisse laoreLorem ipsum dolor sit amet consectetur. Suspendisse laoreLorem ipsum dolor sit amet consectetur. Suspendisse laore
-            </p>
+            <h6>Email: info@Kibirtgmail</h6>
+            <h6>Instagram: kibirt</h6>
+            <h6>Telegram: kibirt</h6>
+            <h6>Facebook: kibirt</h6>
+            <h6>X: kibirt</h6>
+           
           </div>
         </Col>
       </Row>

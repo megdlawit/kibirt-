@@ -10,12 +10,14 @@ body {
     --bs-light: #fffbf5;
 }
 
+/* ***************************hero*********************** */
 .hero{
   background-color: #1A2E3A;
-  margin-top: 0%;
+  margin: 0%;
+
+ 
+  
 }
-
-
 
 .shop-Text {
     font-weight: 700;
@@ -31,14 +33,14 @@ body {
 .image {
     position: relative;
     width: 100%;
-    border: 6px solid var(--bs-light);
+    border: 3px solid #d2b45e;
     border-radius: 10px;
 }
 
 .secound-bag {
     height: 200px;
     width: 250px;
-    border: 6px solid var(--bs-light);
+    border: 3px solid #d2b45e;
     border-radius: 10px;
     position: absolute;
     left: 48%;
@@ -69,71 +71,70 @@ body {
   
 
 }
+@media only screen and (max-width: 376px) {
+    .hero{
+        margin-left: 0em;
+        width: 58vh;
+        height: 110vh;
+    }
+    .shop-Text {
+        margin-left: 0.5em;
+        margin-top: 1em;
+        font-weight: 700;
+        color: var(--bs-light);
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.5em;
+    }
+    .text-white{
+        font-size: 0.8em;
+        margin-left: 1em;
+       
+    }
 
-/* =============responsive=phone========== */
-@media screen and (max-width:767px) {
-
-    /* header-section-css */
+    .image{
+        width: 100%; 
+        max-width: 100%;  
+        top: -4em;   
+    }
     .secound-bag {
-        display: none;
+        width: 95%; 
+        max-width: 100%; 
+        left: 0.9em; 
+        top: auto; 
+        margin-top: -2em; 
+        margin-bottom: 20em;
     }
 
-    .icon-menu1 {
-        display: none;
+    .text-a {
+        margin-left: 1rem; /* Adjust the left margin for smaller screens */
+        font-size: 1.5em; /* Adjust the font size for smaller screens */
+        margin-top: 6em;
     }
+    
+    
+}
+/* 640 px  */
+@media only screen and (min-width: 40em) {
 
-    .btn2 {
-        width: 34%;
-    }
 
-    .btn3 {
-        left: 245px;
-        width: 28%;
-    }
-
-    .input {
-        padding-right: 140px;
-    }
 }
 
-/* ================Responsive mini=ipad====================== */
-@media screen and (max-width:768px) {
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {
 
-    /* header-section-css */
-    .btn2 {
-        width: 40%;
-    }
-
-    .secound-bag {
-        left: 49%;
-        top: 28%;
-
-    }
 }
 
-@media screen and (max-width:820px) {
-    .btn2 {
-        width: 40%;
-    }
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {
 
-    .secound-bag {
-        left: 49%;
-        top: 28%;
-
-    }
 }
 
-@media screen and (max-width:912px) {
-    .btn2 {
-        width: 40%;
-    }
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
 
-    .secound-bag {
-        left: 49%;
-        top: 28%;
-
-    }
 }
+
 
 /* ************************************ grid************ */
 .grid-container{
@@ -189,6 +190,44 @@ body {
       font-size: 50px;
       font-weight: 300; 
 }
+
+@media only screen and (max-width: 376px) {
+  .img-bag-text{
+    font-size: 1.7em;
+    background-color: #1A2E3A;
+    width: 3em;
+    height: 1.5em;
+    margin-top: 5.6em;
+    margin-left: 0em;
+    border-radius: 5px;
+    padding-left: 5px;
+  }  
+  .img-shoe-text{
+    font-size: 1.7em;
+    background-color: #1A2E3A;
+    width: 3.5em;
+    height: 1.5em;
+    margin-top: 5.6em;
+    margin-left: 0em;
+    border-radius: 5px;
+    padding-left: 5px;
+  }  
+
+  .img-cloth-text{
+    font-size: 1.7em;
+    background-color: #1A2E3A;
+    width: 3.5em;
+    height: 1.5em;
+    margin-top: 13.4em;
+    margin-left: 0em;
+    border-radius: 5px;
+    padding-left: 5px;
+  }
+
+    
+    
+}
+
 /* about */
 #about {
     padding: 110px 10px;
@@ -288,7 +327,43 @@ body {
   #about  h6 {
     color: #FFFFFF;
   }
-  /* about end */
+  @media only screen and (max-width: 376px) {
+  .about_img img{
+    width: 80%;
+    margin-left: 1.8em;
+    
+  }  
+  #about .about_img:before {
+    position: absolute;
+    left: 23px;
+    top: -5px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    content: '';
+    border-left: 3px solid #D4Af37 ;
+    border-top: 3px solid #D4Af37 ;
+    -webkit-transition: 0.5s 0.1s;
+    transition: 0.5s 0.1s;
+  }
+  #about .about_img:after {
+    position: absolute;
+    right: 32px;
+    bottom: -5px;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    content: '';
+    border-right: 3px solid #D4Af37 ;
+    border-bottom: 3px solid #D4Af37 ;
+    -webkit-transition: 0.5s 0.1s;
+    transition: 0.5s 0.1s;
+  }
+      
+  }
+
+
+  /* *********************about end ****************/
   /* card */
 
 .card {
@@ -330,3 +405,73 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+
+
+
+
+/* =============responsive=phone========== */
+/* @media screen and (max-width:767px) {
+
+ 
+    .secound-bag {
+        display: none;
+    }
+
+    .icon-menu1 {
+        display: none;
+    }
+
+    .btn2 {
+        width: 34%;
+    }
+
+    .btn3 {
+        left: 245px;
+        width: 28%;
+    }
+
+    .input {
+        padding-right: 140px;
+    }
+} */
+
+/* ================Responsive mini=ipad====================== */
+/* @media screen and (max-width:768px) {
+
+ 
+    .btn2 {
+        width: 40%;
+    }
+
+    .secound-bag {
+        left: 49%;
+        top: 28%;
+
+    }
+}
+
+@media screen and (max-width:820px) {
+    .btn2 {
+        width: 40%;
+    }
+
+    .secound-bag {
+        left: 49%;
+        top: 28%;
+
+    }
+}
+
+@media screen and (max-width:912px) {
+    .btn2 {
+        width: 40%;
+    }
+
+    .secound-bag {
+        left: 49%;
+        top: 28%;
+
+    }
+} */

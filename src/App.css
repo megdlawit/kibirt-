@@ -423,8 +423,8 @@ body {
 
 
   /* *********************about end ****************/
-  /* card */
-
+  card
+/* 
 .card {
   position: relative;
   width: 50%;
@@ -463,6 +463,10 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+} */
+.bg-secondary {
+  background-color: #0e153a;
+  color: #fff;
 }
 
 

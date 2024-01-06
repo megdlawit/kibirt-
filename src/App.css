@@ -290,7 +290,7 @@ body {
   }
   /* about end */
   /* card */
-
+/* 
 .card {
   position: relative;
   width: 50%;
@@ -329,4 +329,29 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+} */
+.bg-secondary {
+  background-color: #0e153a;
+  color: #fff;
+}
+
+.card {
+  background-color: #e2f3f5;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  flex: 0 1 30%; /* Adjust width as needed */
+  margin-bottom: 20px;
+}
+.icons{
+ width: 50px;
+ height:50px;
+ color:#D4Af37
+ 
 }

@@ -5,6 +5,7 @@ import Hero from './Hero';
 import { Grid } from './Grid';
 import About from './About';
 import Card from './Card';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Grid/>
       <About/>
       <Card/>
+      <Contact/>
     </div>
   );
 }

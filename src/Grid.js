@@ -13,8 +13,8 @@ export const Grid = () => {
 
   return (
     <div className='grid-container'>
-    
-    <Container maxWidth="lg">
+     <Container maxWidth="lg">
+   
    <div className='grid_style'>
     <MDBRow>
       <MDBCol lg={6} md={12} className='mb-4 mb-lg-0'>

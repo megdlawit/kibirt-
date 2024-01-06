@@ -189,3 +189,144 @@ body {
       font-size: 50px;
       font-weight: 300; 
 }
+/* about */
+#about {
+    padding: 110px 10px;
+    position: relative;
+    background: url("./Assets/bag.jpg") center center;
+    background-size: cover;
+  }
+  
+  #about:before {
+    content: '';
+    background: #252b3ade;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #about .about_img {
+    position: relative;
+    -webkit-transition: 0.6s 0.1s;
+    transition: 0.6s 0.1s;
+  }
+  
+  #about .about_img img {
+    border: 1px solid #444;
+  }
+  
+  #about .about_img:before {
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    content: '';
+    border-left: 3px solid #D4Af37 ;
+    border-top: 3px solid #D4Af37 ;
+    -webkit-transition: 0.5s 0.1s;
+    transition: 0.5s 0.1s;
+  }
+  
+  #about .about_img:after {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    content: '';
+    border-right: 3px solid #D4Af37 ;
+    border-bottom: 3px solid #D4Af37 ;
+    -webkit-transition: 0.5s 0.1s;
+    transition: 0.5s 0.1s;
+  }
+  
+  #about .about_img:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  
+  #about .about_img:hover::before {
+    left: 10px;
+    top: 10px;
+  }
+  
+  #about .about_img:hover::after {
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  #about .section_title {
+    color: #ddd;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+    padding-bottom: 5px;
+  }
+  
+  #about .section_title:after {
+    display: block;
+    content: '';
+    width: 45px;
+    height: 2px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    background-color: #cb9313 ;
+  }
+  
+  #about .content {
+    z-index: 1;
+  }
+  
+  #about .content p {
+    color: #ddd;
+  }
+  #about  h6 {
+    color: #FFFFFF;
+  }
+  /* about end */
+  /* card */
+
+.card {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlaycard {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.card:hover .overlaycard {
+  opacity: 1;
+}
+
+.textcard {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

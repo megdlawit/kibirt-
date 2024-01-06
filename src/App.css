@@ -115,8 +115,58 @@ body {
     
 }
 /* 640 px  */
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 376px) and (max-width: 640px) {
+    .hero{
+        margin-left: 0em;
+        width: 100vh;
+        height: 110vh;
+        
+    }
+    .shop-Text {
+        
+        margin-left: -1.5em;
+        margin-top: 1em;
+        font-weight: 700;
+        color: var(--bs-light);
+        text-transform: uppercase;
+        color: white;
+        font-size: 2.5em;
+        width: 90vh;
+        
+    }
+    .text-white{
+        font-size: 0.8em;
+        margin-left: 1em;
+       
+    }
 
+    .image {
+        position: relative;
+        width: 50%;
+        border: 3px solid #d2b45e;
+        border-radius: 10px;
+        top: -4em;
+        left: -2em;
+    }
+    
+    .secound-bag {
+        height: 200px;
+        width: 300px;
+        border: 3px solid #d2b45e;
+        border-radius: 10px;
+        position: absolute;
+        left: 5%;
+        top: 70%;
+        background: #000;
+    }
+
+    .text-a {
+        margin-left: 1rem; /* Adjust the left margin for smaller screens */
+        font-size: 1.5em; /* Adjust the font size for smaller screens */
+        margin-top: 6em;
+    }
+    
+    
 
 }
 
@@ -328,6 +378,15 @@ body {
     color: #FFFFFF;
   }
   @media only screen and (max-width: 376px) {
+    #about {
+        margin-left:0px;
+        width: 58vh;
+        height: 100vh;
+        padding: 110px 20px;
+        position: relative;
+        background: url("./Assets/bag.jpg") center center;
+        background-size: cover;
+      }
   .about_img img{
     width: 80%;
     margin-left: 1.8em;

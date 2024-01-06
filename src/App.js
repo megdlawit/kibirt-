@@ -14,7 +14,8 @@ function App() {
       <Hero/>
       <Grid/>
       <About/>
-      <Card/>
+      
+      {/* <Card/> */}
       
     </div>
   );

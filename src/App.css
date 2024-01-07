@@ -29,25 +29,25 @@ body {
 .stylish-text {
     color: var(--bs-orange);
 }
-
 .image {
-    position: relative;
-    width: 100%;
-    border: 3px solid #d2b45e;
-    border-radius: 10px;
+  position: relative;
+  width: 100%;
+  border: 3px solid #d2b45e;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out; /* Add smooth transition effect */
 }
 
 .secound-bag {
-    height: 200px;
-    width: 250px;
-    border: 3px solid #d2b45e;
-    border-radius: 10px;
-    position: absolute;
-    left: 48%;
-    top: 45%;
-    background: #000;
+  height: 200px;
+  width: 250px;
+  border: 3px solid #d2b45e;
+  border-radius: 10px;
+  position: absolute;
+  left: 48%;
+  top: 45%;
+  background: #000;
+  transition: transform 0.3s ease-in-out; /* Add smooth transition effect */
 }
-
 
 .shop-Text1 {
     font-weight: 700;
@@ -70,6 +70,10 @@ body {
   
   
 
+}
+.image:hover,
+.secound-bag:hover {
+  transform: scale(1.1); /* Add a scaling effect on hover */
 }
 @media only screen and (max-width: 376px) {
     .hero{
@@ -187,95 +191,68 @@ body {
 
 
 /* ************************************ grid************ */
-.grid-container{
-    margin-top: 3rem;
-}
-.img-shoe{
-    position: relative;
+.grid-container {
+  margin-top: 3rem;
 }
 
-.img-shoe-text{
-    position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      text-align: left;
-      margin-top: 8rem;
-      margin-left: 2rem;
-      color: white;
-      font-size: 50px;
-      font-weight: 300; 
+.img-shoe,
+.img-bag,
+.img-cloth {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 }
 
-.img-bag{
-    position: relative;
+.img-shoe:hover,
+.img-bag:hover,
+.img-cloth:hover {
+  transform: scale(1.005); /* Increase the scale on hover */
 }
 
-.img-bag-text{
-    position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      text-align: left;
-      margin-top: 8rem;
-      margin-left: 2rem;
-      color: white;
-      font-size: 50px;
-      font-weight: 300; 
+.img-shoe,
+.img-bag,
+.img-cloth {
+  width: 100%; /* Set the width of the images to 100% */
+  height: auto; /* Maintain the aspect ratio of the images */
 }
 
-.img-cloth{
-    position: relative;
+.img-shoe-text,
+.img-bag-text,
+.img-cloth-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 50px;
+  font-weight: 300;
+  transform: translateY(100%); /* Initial position off-screen */
+  transition: transform 0.3s ease-in-out;
+  margin-top: 8rem; /* Default margin-top */
+  margin-left: 2rem;
 }
 
-.img-cloth-text{
-    position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      text-align: left;
-      margin-top: 18rem;
-      margin-left: 2rem;
-      color: white;
-      font-size: 50px;
-      font-weight: 300; 
-}
-
+/* Media Query for smaller screens */
 @media only screen and (max-width: 376px) {
-  .img-bag-text{
-    font-size: 1.7em;
-    background-color: #1A2E3A;
-    width: 3em;
-    height: 1.5em;
-    margin-top: 5.6em;
-    margin-left: 0em;
-    border-radius: 5px;
-    padding-left: 5px;
-  }  
-  .img-shoe-text{
-    font-size: 1.7em;
-    background-color: #1A2E3A;
-    width: 3.5em;
-    height: 1.5em;
-    margin-top: 5.6em;
-    margin-left: 0em;
-    border-radius: 5px;
-    padding-left: 5px;
-  }  
-
-  .img-cloth-text{
-    font-size: 1.7em;
-    background-color: #1A2E3A;
-    width: 3.5em;
-    height: 1.5em;
-    margin-top: 13.4em;
-    margin-left: 0em;
-    border-radius: 5px;
-    padding-left: 5px;
+  .img-bag-text,
+  .img-shoe-text,
+  .img-cloth-text {
+      font-size: 1.7em;
+      background-color: #1A2E3A;
+      width: 3.5em;
+      height: 1.5em;
+      margin-top: 5.6em;
+      margin-left: 0em;
+      border-radius: 5px;
+      padding-left: 5px;
+      transform: translateY(100%); /* Initial position off-screen for smaller screens */
+      transition: transform 0.3s ease-in-out;
   }
 
-    
-    
+  .img-cloth-text {
+      margin-top: 13.4em;
+  }
 }
 
 /* about */
@@ -423,118 +400,193 @@ body {
 
 
   /* *********************about end ****************/
-  card
-/* 
-.card {
-  position: relative;
-  width: 50%;
+  
+/* ********* mission**************** */
+
+#mission {
+  padding: 100px 10px;
+  background-color: white;
+  margin-bottom: -5rem;
+
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
+
+
+#mission .section_title {
+  color: #cb9313;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-bottom: 5px;
+  margin-left:-10rem ;
 }
 
-.overlaycard {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+
+
+#mission .content {
+  /* margin-left: -25rem; */
 }
 
-.card:hover .overlaycard {
-  opacity: 1;
+#mission .content p {
+  margin-left: -30rem;
+  color: #434242;
+  text-align: justify;
+  width: 60rem;
+  font-size: 1.1rem;
+}
+#mission  h6 {
+  color: #FFFFFF;
 }
 
-.textcard {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-} */
+/* ********************************mission end******************************** */
+
 .bg-secondary {
   background-color: #0e153a;
   color: #fff;
 }
+.text-light{
+  margin-bottom: 2rem;
+}
+.card-img-top{
+  width: 70%;
+  margin-left: 4rem;
+  margin-top: 2rem;
 
+  /* margin: 5rem; */
 
-
-
-
-
-/* =============responsive=phone========== */
-/* @media screen and (max-width:767px) {
-
- 
-    .secound-bag {
-        display: none;
-    }
-
-    .icon-menu1 {
-        display: none;
-    }
-
-    .btn2 {
-        width: 34%;
-    }
-
-    .btn3 {
-        left: 245px;
-        width: 28%;
-    }
-
-    .input {
-        padding-right: 140px;
-    }
-} */
-
-/* ================Responsive mini=ipad====================== */
-/* @media screen and (max-width:768px) {
-
- 
-    .btn2 {
-        width: 40%;
-    }
-
-    .secound-bag {
-        left: 49%;
-        top: 28%;
-
-    }
 }
 
-@media screen and (max-width:820px) {
-    .btn2 {
-        width: 40%;
-    }
-
-    .secound-bag {
-        left: 49%;
-        top: 28%;
-
-    }
+.card-body{
+  margin-top: 1rem;
+  height: 22vh;
+}
+.card-title-goal{
+  color:  #D4Af37 ;
+  margin-left: 8rem;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.card-title-value{
+  color:  #D4Af37 ;
+  margin-left: 7rem;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.card-title-vision{
+  color:  #D4Af37 ;
+  margin-left: 7rem;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
 }
 
-@media screen and (max-width:912px) {
-    .btn2 {
-        width: 40%;
-    }
 
-    .secound-bag {
-        left: 49%;
-        top: 28%;
+/* *******************8 contact******************* */
 
-    }
-} */
+/* App.css */
+
+.icons {
+  font-size: 3rem;
+  color: #C0A142;
+}
+
+.contact-section {
+  padding: 50px 0;
+  background-color: #1A2E3A;
+}
+
+.contact-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #C0A142;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.contact-card p {
+  color: #777;
+}
+
+.contact-card h6 {
+  color: #555;
+}
+
+.contact-card .icons {
+  margin-bottom: 10px;
+}
+
+.contact-card:hover .icons {
+  color: #fff;
+}
+
+
+/* *******************Text Advertisment**************** */
+.textAdvertismentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  margin: 6em 1em 6em 2em;
+  padding: 3em;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 -4px 8px rgba(0, 0, 0, 0.1); /* Add both top and bottom shadows */
+}
+.textAdvertismentRectangle {
+  width: 20em;
+  /* margin: 10px; */
+}
+.textAdvertismentContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textAdvertismentIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  background-color: #C0A142;
+  color: white;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100px;
+  font-size: 2em;
+}
+.textAdvertismentIcon:hover {
+  background-color: #1A2E3A; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+  transform: scale(1.1); /* Add a scale effect on hover */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.textAdvertismentLabel h2 {
+  font-size: 1.2em;
+  font-family: var(--headers-font);
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary-color-black);
+}
+
+.textAdvertismentLabel h5 {
+  text-align: center;
+  font-size: 0.9em;
+  font-family: var(--headers-font);
+  font-weight: 100;
+  color: var(--primary-color-light-black);
+}

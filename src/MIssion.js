@@ -1,7 +1,7 @@
 import React from 'react'
 import "./App.css";
 
-export default function MIssion() {
+export default function Mission() {
   return (
 
   

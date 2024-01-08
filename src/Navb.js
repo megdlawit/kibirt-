@@ -49,6 +49,9 @@ function Navb() {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   {/* Apply inline styles to NavLinks */}
+                  <Nav.Link href="#about" title="About"  style={{ marginRight: '40px',fontSize: '21px' }} >
+                    About
+                  </Nav.Link>
                   <Nav.Link
                     href="#service"
                     title="Service"
@@ -56,12 +59,10 @@ function Navb() {
                   >
                     Service
                   </Nav.Link>
-                  <Nav.Link href="#contact" title="Contact"  style={{  marginRight: '40px', fontSize: '21px' }} > 
+                  <Nav.Link href="#Contact" title="Contact"  style={{  marginRight: '40px', fontSize: '21px' }} > 
                     Contact
                   </Nav.Link>
-                  <Nav.Link href="#about" title="About"  style={{ marginRight: '40px',fontSize: '21px' }} >
-                    About
-                  </Nav.Link>
+                 
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

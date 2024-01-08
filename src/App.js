@@ -6,7 +6,8 @@ import { Grid } from './Grid';
 import About from './About';
 import Card from './Card';
 import Contact from './Contact';
-import Mission from './Mission';
+import MIssion from './MIssion';
+import { Footer } from './Footer';
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
       <Hero/>
       <Grid/>
       <About/>
-      <Mission/>
+      <MIssion/>
       <Card/>
       <Contact/>
+      <Footer></Footer>
       
     </div>
   );

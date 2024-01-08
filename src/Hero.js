@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="row justify-content-between align-items-center">
         <div className="col-lg-6 col-md-6 col-sm-6 py-5">
         <p className="text-white">
-          made in Ethiopia, dedicated to Ethiopia
+          made in Ethiopia
           </p>
           <h5 className="shop-Text display-2">
         

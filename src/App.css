@@ -285,7 +285,7 @@ body {
   }
   
   #about .about_img:hover {
-    -webkit-transform: scale(1.05);
+    -webkit-transform: scale(1.05); 
             transform: scale(1.05);
   }
   
@@ -362,9 +362,12 @@ body {
       
   }
 
+  .icons{
+     color:#cb9313
+  }
 
   /* *********************about end ****************/
-  card
+
 /* 
 .card {
   position: relative;

@@ -230,13 +230,12 @@ body {
     margin-left: 4em;
   }
   .img-bag-text,
-  .img-shoe-text,
-  .img-cloth-text {
+  .img-shoe-text{
       font-size: 1.7em;
       background-color: #1A2E3A;
-      width: 3.5em;
-      height: 1.5em;
-      margin-top: 5em;
+      width: 4em;
+      height: 1.7em;
+      margin-top: 8.3em;
       margin-left: 0em;
       border-radius: 5px;
       padding-left: 5px;
@@ -245,12 +244,21 @@ body {
   }
 
   .img-cloth-text {
-      margin-top: 13.4em;
+    font-size: 1.7em;
+      background-color: #1A2E3A;
+      width: 4em;
+      height: 1.7em;
+      margin-left: 0em;
+      border-radius: 5px;
+      padding-left: 5px;
+      transform: translateY(100%); /* Initial position off-screen for smaller screens */
+      transition: transform 0.3s ease-in-out;
+      margin-top: 21.2em;
   }
 }
 /* about */
 #about {
-    padding: 110px 10px;
+    padding: 110px 0px;
     position: relative;
     background: url("./Assets/bag.jpg") center center;
     background-size: cover;

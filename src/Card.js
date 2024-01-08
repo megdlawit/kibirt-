@@ -15,9 +15,10 @@ const Card = () => {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <h5 className="card-title">Card 1</h5>
+                <h5 className="card-title-vision">Vision</h5>
                 <p className="card-text">
-                  Content for Card 1
+                To become the best leather and clothing brand that presents Africa for the rest of the World and deliver our products all over. 
+  
                 </p>
               </div>
             </div>
@@ -30,25 +31,27 @@ const Card = () => {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <h5 className="card-title">Card 2</h5>
+                <h5 className="card-title-value">Values</h5>
                 <p className="card-text">
-                  Content for Card 2
+                High quality, Accessibility, Africanism, Convenience and Consistency 
                 </p>
               </div>
             </div>
           </Col>
           <Col>
             <div className="card shadow" style={{ backgroundColor: "#1A2E3A" }}>
+              <div className="fullcard">
               <img
                 className="card-img-top"
                 src="https://via.placeholder.com/150"
                 alt="Card image cap"
               />
               <div className="card-body">
-                <h5 className="card-title">Card 3</h5>
+                <h5 className="card-title-goal">Goals</h5>
                 <p className="card-text">
-                  Content for Card 3
+                Produces goods that tell stories of brave women supporting each other and Focus on products that customers like most
                 </p>
+              </div>
               </div>
             </div>
           </Col>

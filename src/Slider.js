@@ -1,4 +1,17 @@
 import React, { useState } from 'react';
+import img1 from './Assets/Frame 12.png';
+import img2 from './Assets/Frame 5 (2).png';
+import img3 from './Assets/Frame 13.png';
+import img4 from './Assets/Frame 7 (1).png';
+import img5 from './Assets/Frame 8 (3).png';
+import img6 from './Assets/Frame 11 (1).png';
+import img7 from './Assets/Frame 9.png';
+import img9 from './Assets/Frame 10.png';
+import img8 from './Assets/Frame 6 (1).png';
+import '@fortawesome/fontawesome-free/css/all.css';
+
+
+
 
 const Slider = () => {
   const [activeItem, setActiveItem] = useState(0);
@@ -13,19 +26,19 @@ const Slider = () => {
 
   const carouselItems = [
     [
-      { title: 'Bridal boutiques', image: './assets/img/bridal butique.jpg' },
-      { title: 'Makeup/Beauty/Hair', image: './assets/img/makeup.jpg' },
-      { title: 'Decorators', image: './assets/img/flower1.jpg' },
+      { title: 'Bridal boutiques', image: img1 },
+      { title: 'Makeup/Beauty/Hair', image: img2 },
+      { title: 'Decorators', image: img8 },
     ],
     [
-      { title: 'Photographers', image: './assets/img/photographer.jpg' },
-      { title: 'Realtors', image: 'assets/img/house.jpg' },
-      { title: 'Microfinance', image: 'assets/img/money.jpg' },
+      { title: 'Photographers', image: img4 },
+      { title: 'Realtors', image: img5 },
+      { title: 'Microfinance', image: img6 },
     ],
     [
-      { title: 'Catering', image: './assets/img/catering.jpg' },
-      { title: 'Wedding Planner', image: './assets/img/weddinghall.jpg' },
-      { title: 'Florists', image: './assets/img/shoes.jpg' },
+      { title: 'Catering', image: img3 },
+      { title: 'Wedding Planner', image: img9 },
+      { title: 'Florists', image: img7 },
     ],
   ];
 
@@ -45,9 +58,7 @@ const Slider = () => {
                   alt="100%x280"
                   src={item.image}
                 />
-                <div className="card-body">
-                  <h4 className="card-title">{item.title}</h4>
-                </div>
+               
               </div>
             </div>
           ))}
@@ -56,17 +67,24 @@ const Slider = () => {
           <div className="col-6">
             
           </div>
-          <div className="col-6 text-right">
-            <button
-              className="btn btn-primary mb-3 mr-1"
-              onClick={handlePrev}
-            >
-              <i className="fa fa-arrow-left"></i>
-            </button>
-            <button className="btn btn-primary mb-3 " onClick={handleNext}>
-              <i className="fa fa-arrow-right"></i>
-            </button>
-          </div>
+
+
+    
+
+<div className="row mt-3">
+  <div className="col-6"></div>
+  <div className="col-6 text-right">
+    <div className="button-container">
+      <button className="btn btn-primary mb-3 mr-1" onClick={handlePrev}>
+        <i className="fa fa-arrow-left"></i>
+      </button>
+      <button className="btn btn-primary mb-3" onClick={handleNext}>
+        <i className="fas fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
     </section>

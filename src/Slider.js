@@ -46,7 +46,7 @@ const Slider = () => {
     <section className="pt-5 pb-5">
       <div className="container">
       <h3>
-              <span style={{ color: '#cb9313' }}>Who</span> Will Be There?
+              <span style={{ color: '#cb9313' }}>Our</span> Products
             </h3>
         <div className="row">
           {carouselItems[activeItem].map((item, index) => (

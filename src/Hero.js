@@ -7,14 +7,14 @@ const Hero = () => {
     <div className="container">
       <div className="row justify-content-between align-items-center">
         <div className="col-lg-6 col-md-6 col-sm-6 py-5">
-        <p className="text-white">
-          made in Ethiopia
-          </p>
+       
           <h5 className="shop-Text display-2">
         
           “Show your  <span className="stylish-text"> Diva</span> Within”
           </h5>
-        
+          <p className="text-white">
+          made in Ethiopia
+          </p>
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12 py-5">
           <img

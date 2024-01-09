@@ -19,7 +19,8 @@ body {
   background-color: #1A2E3A;
   margin: 0px;
   overflow-x: hidden;
-  height: 80vh;
+  overflow-y: hidden;
+  height: 84vh;
   
 }
 
@@ -65,7 +66,7 @@ body {
 
 .text-a {
   align-items: center;
-  margin-left: 3rem;
+  margin-left: 8rem;
   font-weight: 300;
   color: white;
   margin-top: -1px;
@@ -263,7 +264,7 @@ body {
 
 /* ************************************ grid************ */
 .grid-container{ 
-  margin-top: 3em;
+  margin-top: 5em;
   width: 90%;
   margin-left: 3em;
 }
@@ -421,17 +422,19 @@ body {
 }
 /* about */
 #about {
-    padding: 110px 0px;
+    padding: 10px 0px;
     position: relative;
-    background: url("./Assets/bag.jpg") center center;
+
     background-size: cover;
     overflow-x: hidden;
-    width: 68em;
+    overflow-y: hidden;
+    height: 70vh;
+    /* width: 100em; */
   }
   
   #about:before {
     content: '';
-    background: #252b3ade;
+    background: #1A2E3A;
     position: absolute;
     bottom: 0;
     top: 0;
@@ -448,13 +451,15 @@ body {
   
   #about .about_img img {
     border: 1px solid #444;
-    width: 90%;
+    width: 100%;
+    margin-left: -2em;
+    margin-top: 6em;
   }
   
   #about .about_img:before {
     position: absolute;
-    left: -1em;
-    top: -1.5em;
+    left: -4em;
+    top: 3.5em;
     width: 60px;
     height: 60px;
     z-index: 1;
@@ -467,8 +472,8 @@ body {
   
   #about .about_img:after {
     position: absolute;
-    right: 2em;
-    bottom: -1em;
+    right: -1em;
+    bottom: -3em;
     width: 60px;
     height: 60px;
     z-index: 2;
@@ -522,14 +527,143 @@ body {
   #about  h6 {
     color: #FFFFFF;
   }
+  @media (max-width: 1440px) {
+    #about {
+     margin-top: -6em;
+        padding: 5em 0em;
+        position: absolute;
+       
+        background-size: cover;
+        overflow-x: hidden;
+        width: 90em;
+    
+    }
+
+      #about .about_img img {
+        border: 1px solid #444;
+        width: 100%;
+        margin-left: 0em;
+        margin-top: -1em;
+      }
+      #about .about_img:before {
+        position: absolute;
+        left: -1em;
+        top: -1.5em;
+        width: 60px;
+        height: 60px;
+        z-index: 1;
+        content: '';
+        border-left: 3px solid #D4Af37 ;
+        border-top: 3px solid #D4Af37 ;
+        -webkit-transition: 0.5s 0.1s;
+        transition: 0.5s 0.1s;
+      }
+      
+      #about .about_img:after {
+        position: absolute;
+        right: -1em;
+        bottom: -1em;
+        width: 60px;
+        height: 60px;
+        z-index: 2;
+        content: '';
+        border-right: 3px solid #D4Af37 ;
+        border-bottom: 3px solid #D4Af37 ;
+        -webkit-transition: 0.5s 0.1s;
+        transition: 0.5s 0.1s;
+      }
+
+      #about .section_title {
+        margin-top: 0em;
+        margin-left: 3em;
+        width: 10em;
+        color: #ddd;
+        font-size: 2em;
+        text-align: left;
+        font-weight: 600;
+        padding-bottom: 5px;
+      }
+      #about .content p {
+        color: #ffffff;
+        font-weight: 200;
+        width: 26em;
+        margin-left: 3em;
+      }
+    
+    }
+
+
+  @media (max-width: 1024px) {
+    #about {
+     margin-top: -1em;
+        padding: 5em 0em;
+        position: absolute;
+       
+        background-size: cover;
+        overflow-x: hidden;
+        width: 65em;
+    
+    }
+
+      #about .about_img img {
+        border: 1px solid #444;
+        width: 100%;
+        margin-left: 0em;
+        margin-top: -2em;
+      }
+      #about .about_img:before {
+        position: absolute;
+        left: -1em;
+        top: -3.5em;
+        width: 60px;
+        height: 60px;
+        z-index: 1;
+        content: '';
+        border-left: 3px solid #D4Af37 ;
+        border-top: 3px solid #D4Af37 ;
+        -webkit-transition: 0.5s 0.1s;
+        transition: 0.5s 0.1s;
+      }
+      
+      #about .about_img:after {
+        position: absolute;
+        right: -1em;
+        bottom: -1em;
+        width: 60px;
+        height: 60px;
+        z-index: 2;
+        content: '';
+        border-right: 3px solid #D4Af37 ;
+        border-bottom: 3px solid #D4Af37 ;
+        -webkit-transition: 0.5s 0.1s;
+        transition: 0.5s 0.1s;
+      }
+
+      #about .section_title {
+        margin-top: 0em;
+        margin-left: 3em;
+        width: 10em;
+        color: #ddd;
+        font-size: 2em;
+        text-align: left;
+        font-weight: 600;
+        padding-bottom: 5px;
+      }
+      #about .content p {
+        color: #ffffff;
+        font-weight: 200;
+        width: 26em;
+        margin-left: 0em;
+      }
+    }
 
  
     @media (max-width: 768px) {
       #about {
-        margin-top: -6em;
+        margin-top: -3em;
         padding: 5em 0em;
         position: absolute;
-        background: url("./Assets/bag.jpg") center center;
+        
         background-size: cover;
         overflow-x: hidden;
         width: 48em;
@@ -540,11 +674,12 @@ body {
           border: 1px solid #444;
           width: 100%;
           margin-left: 12em;
+          margin-top: -2em;
         }
         #about .about_img:before {
           position: absolute;
           left: 11em;
-          top: -1.5em;
+          top: -3em;
           width: 60px;
           height: 60px;
           z-index: 1;
@@ -594,6 +729,7 @@ body {
   #about {
     margin-top: -2em;
     width: 27em;
+    height: 85vh;
     padding: 8em 0em;
     background-position: center;
     overflow-x: hidden;
@@ -636,6 +772,7 @@ body {
     padding: 8em 0em;
     background-position: center;
     overflow-x: hidden;
+    height: 80vh;
   }
 
   #about .about_img img {
@@ -670,6 +807,7 @@ body {
 @media (max-width: 320px) {
   #about {
     margin-top: -2em;
+    height: 70vh;
     width: 20em;
     padding: 8em 0em;
     background-position: center;
@@ -716,6 +854,7 @@ body {
 /* ********* mission**************** */
 
 #mission {
+  margin-top: 0em;
   padding: 100px 10px;
   background-color: white;
   margin-bottom: -5rem;
@@ -745,9 +884,28 @@ body {
   color: #FFFFFF;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   #mission {
     margin-top: 30em;
+    padding: 100px 10px;
+    background-color: white;
+    margin-bottom: -5rem;
+  
+  }
+}
+@media (max-width: 1024px) {
+  #mission {
+    margin-top: 25em;
+    padding: 100px 10px;
+    background-color: white;
+    margin-bottom: -5rem;
+  
+  }
+}
+
+@media (max-width: 768px) {
+  #mission {
+    margin-top: 26em;
     padding: 100px 10px;
     background-color: white;
     margin-bottom: -5rem;
@@ -780,7 +938,7 @@ body {
 
 @media (max-width: 426px) {
   #mission {
-    margin-top: 38em;
+    margin-top: 33em;
     padding: 100px 10px;
     background-color: white;
     margin-bottom: -5rem;
@@ -814,7 +972,7 @@ body {
 
 @media (max-width: 376px) {
   #mission {
-    margin-top: 35em;
+    margin-top: 28em;
     padding: 100px 10px;
     background-color: white;
     margin-bottom: -5rem;
@@ -847,7 +1005,7 @@ body {
 
 @media (max-width: 320px) {
   #mission {
-    margin-top: 35em;
+    margin-top: 28em;
     padding: 100px 10px;
     background-color: white;
     margin-bottom: -5rem;
@@ -1211,4 +1369,16 @@ transition: 0.3s ease-in-out;
 }
 .social-icon a:hover img {
 filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+/* ************************8slider**************************** */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.button-container button {
+  margin-right: 10px; /* Adjust the margin as per your preference */
+  background-color:  #1A2E3A;
 }

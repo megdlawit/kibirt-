@@ -2,6 +2,8 @@ import React from 'react'
 import "./App.css";
 import img1 from "./Assets/bag.jpg"
 export default function About() {
+
+  
   return (
 
   

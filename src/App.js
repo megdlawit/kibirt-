@@ -8,6 +8,8 @@ import Card from './Card';
 import Contact from './Contact';
 import MIssion from './MIssion';
 import { Footer } from './Footer';
+import Slider from './Slider';
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
       <Navb/>
       <Hero/>
       <Grid/>
+      <Slider/>
       <About/>
       <MIssion/>
       <Card/>

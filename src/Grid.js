@@ -7,7 +7,8 @@ import {
 import Container from '@mui/material/Container';
 import bag from './Assets/bag.jpg';
 import shoe from './Assets/shoe .png';
-import cloth from './Assets/cloth.png';
+import cloth from './Assets/cloth2.png';
+// import cloth from "./Assets/Asset 5.png"
 
 export const Grid = () => {
 

@@ -1,6 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./App.css"; // Assuming you have a separate CSS file for styles
+import vision from "./Assets/vision2.png";
+import Values from "./Assets/values.png";
+import Goals from "./Assets/goals.png";
 
 const Card = () => {
   return (
@@ -11,7 +14,7 @@ const Card = () => {
             <div className="card shadow" style={{ backgroundColor: "#1A2E3A" }}>
               <img
                 className="card-img-top"
-                src="https://via.placeholder.com/150"
+                src={vision}
                 alt="Card image cap"
               />
               <div className="card-body">
@@ -27,7 +30,7 @@ const Card = () => {
             <div className="card shadow" style={{ backgroundColor: "#1A2E3A" }}>
               <img
                 className="card-img-top"
-                src="https://via.placeholder.com/150"
+                src={Values}
                 alt="Card image cap"
               />
               <div className="card-body">
@@ -43,7 +46,7 @@ const Card = () => {
               <div className="fullcard">
               <img
                 className="card-img-top"
-                src="https://via.placeholder.com/150"
+                src={Goals}
                 alt="Card image cap"
               />
               <div className="card-body">

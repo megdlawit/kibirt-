@@ -2,6 +2,7 @@ import React from 'react';
 import "./App.css";
 import africa from "./Assets/africa.jpg";
 
+
 const Hero = () => {
   return (
     <div className='hero'>
@@ -19,8 +20,7 @@ const Hero = () => {
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12 py-5">
           <img
-            src="https://media.istockphoto.com/id/862209732/photo/nordic-walking-on-the-mountains.jpg?s=612x612&w=is&k=20&c=gT5Oey7Zik6OwQf0KQgwkeIW9ogSC5vAm-acRpK_J5Q="
-            className="img-fluid image"
+            src={africa}  className="img-fluid image"
             alt="Nature"
           />
           <img
